@@ -1,0 +1,6 @@
+{
+  "name": "Habib Sal — Executive Digital Flagship",
+  "description": "Habib Sal için üst düzey, kullanıcı deneyimi odaklı, modern animasyonlu ve dinamik kişisel web platformu, X/Instagram akışları ve AI Danışman Asistanı.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

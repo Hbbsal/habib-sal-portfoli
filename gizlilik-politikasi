@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gizlilik Politikası</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+    h1 { color: #333; }
+    h2 { color: #555; }
+    .section { margin-bottom: 20px; }
+    .lang { font-weight: bold; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Gizlilik Politikası / Privacy Policy</h1>
+
+  <div class="section">
+    <h2>1. Toplanan Veriler / Collected Data</h2>
+    <p class="lang">TR:</p>
+    <p>Uygulama kişisel verilerinizi (ad, e‑posta, telefon vb.) toplamaz. Oyun içi ilerleme ve ayarlar cihazınızda saklanır. Reklam gösterimi için Google AdMob kullanılabilir. Bu durumda AdMob, cihaz kimliği ve reklam etkileşimleri gibi anonim veriler toplayabilir.</p>
+    <p class="lang">EN:</p>
+    <p>The app does not collect personal information (such as name, email, phone). Game progress and settings are stored locally on the device. Google AdMob may be used for ads. In this case, AdMob may collect anonymous data such as device ID and ad interactions.</p>
+  </div>
+
+  <div class="section">
+    <h2>2. Verilerin Kullanımı / Data Usage</h2>
+    <p class="lang">TR:</p>
+    <p>Veriler yalnızca oyun deneyimini geliştirmek ve reklamların doğru çalışmasını sağlamak için kullanılır. Üçüncü şahıslarla paylaşılmaz, yalnızca hizmet sağlayıcılarla sınırlıdır (ör. Google AdMob).</p>
+    <p class="lang">EN:</p>
+    <p>Data is used only to improve gameplay experience and ensure ads function properly. Data is not shared with third parties, except service providers like Google AdMob.</p>
+  </div>
+
+  <div class="section">
+    <h2>3. Güvenlik / Security</h2>
+    <p class="lang">TR:</p>
+    <p>Uygulama cihazınızda saklanan verileri korumak için standart güvenlik önlemleri uygular. Hiçbir kişisel veri sunucularımıza aktarılmaz.</p>
+    <p class="lang">EN:</p>
+    <p>The app applies standard security measures to protect locally stored data. No personal data is transferred to our servers.</p>
+  </div>
+
+  <div class="section">
+    <h2>4. İzinler / Permissions</h2>
+    <p class="lang">TR:</p>
+    <p>İnternet erişimi izni kullanılır (reklamlar için). Başka bir izin talep edilmez.</p>
+    <p class="lang">EN:</p>
+    <p>Internet access permission is required (for ads). No other permissions are requested.</p>
+  </div>
+
+  <div class="section">
+    <h2>5. İletişim / Contact</h2>
+    <p class="lang">TR:</p>
+    <p>Sorularınız için geliştirici e‑posta adresi üzerinden iletişime geçebilirsiniz: <a href="mailto:habiblas@gmail.com">habiblas@gmail.com</a></p>
+    <p class="lang">EN:</p>
+    <p>For any questions, please contact the developer via email: <a href="mailto:habiblas@gmail.com">habiblas@gmail.com</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Uygulama Bilgisi / App Information</h2>
+    <p class="lang">TR:</p>
+    <p>Uygulama Adı: Basit Kart Eşleştirme<br>Package ID: com.basitkarteslestirme.game</p>
+    <p class="lang">EN:</p>
+    <p>App Name: Simple Card Match<br>Package ID: com.basitkarteslestirme.game</p>
+  </div>
+</body>
+</html>

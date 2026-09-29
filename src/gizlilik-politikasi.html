@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basit Kart Eşleştirme (Simple Card Match) - Gizlilik Politikası / Privacy Policy</title>
+  <meta name="description" content="Basit Kart Eşleştirme (Simple Card Match) mobil uygulaması Gizlilik Politikası / Privacy Policy (com.basitkarteslestirme.game)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #0a0a0a;
+      color: #d4d4d4;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #121212;
+      border: 1px solid #262626;
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #171717;
+      color: #e5e5e5;
+      border: 1px solid #404040;
+      padding: 0.6rem 1.2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      transition: all 0.2s ease;
+    }
+    .btn-back:hover {
+      background: #262626;
+      border-color: #f59e0b;
+      color: #f59e0b;
+    }
+    .header {
+      border-bottom: 1px solid #262626;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.1);
+      color: #f59e0b;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      color: #ffffff;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: #a3a3a3;
+      font-size: 1.05rem;
+    }
+    .meta-card {
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-top: 1.25rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      font-size: 0.875rem;
+    }
+    .meta-item strong {
+      color: #f59e0b;
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.2rem;
+    }
+    .meta-item span {
+      color: #e4e4e7;
+      font-weight: 500;
+    }
+    .lang-section {
+      margin-bottom: 3rem;
+    }
+    .lang-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: #1e1b4b;
+      border: 1px solid #3730a3;
+      padding: 0.75rem 1.25rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      color: #c7d2fe;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .lang-header.en {
+      background: #064e3b;
+      border-color: #065f46;
+      color: #a7f3d0;
+    }
+    h2 {
+      color: #f59e0b;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: #d4d4d8;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      color: #d4d4d8;
+      font-size: 0.95rem;
+    }
+    li {
+      margin-bottom: 0.35rem;
+    }
+    a {
+      color: #f59e0b;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #262626;
+      text-align: center;
+      color: #71717a;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 640px) {
+      .container {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="btn-back">
+      &larr; Ana Sayfaya Dön (habibsal.com.tr)
+    </a>
+
+    <div class="header">
+      <span class="badge">Gizlilik Politikası / Privacy Policy</span>
+      <h1>Basit Kart Eşleştirme (Simple Card Match)</h1>
+      <p class="subtitle">Mobil Uygulama Gizlilik Politikası Beyanı</p>
+      
+      <div class="meta-card">
+        <div class="meta-item">
+          <strong>App Name / Uygulama Adı</strong>
+          <span>Basit Kart Eşleştirme (Simple Card Match)</span>
+        </div>
+        <div class="meta-item">
+          <strong>Package ID / Paket İsmi</strong>
+          <span>com.basitkarteslestirme.game</span>
+        </div>
+        <div class="meta-item">
+          <strong>Developer / Geliştirici</strong>
+          <span>Habib Sal</span>
+        </div>
+        <div class="meta-item">
+          <strong>Contact / İletişim</strong>
+          <span><a href="mailto:habiblas@gmail.com">habiblas@gmail.com</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TÜRKÇE GİZLİLİK POLİTİKASI -->
+    <div class="lang-section">
+      <div class="lang-header">
+        <span>🇹🇷 TÜRKÇE - GİZLİLİK POLİTİKASI</span>
+      </div>
+
+      <h2>1. Toplanan Veriler</h2>
+      <ul>
+        <li>Uygulama kişisel verilerinizi (ad, e‑posta, telefon vb.) toplamaz.</li>
+        <li>Oyun içi ilerleme ve ayarlar cihazınızda saklanır.</li>
+        <li>Reklam gösterimi için Google AdMob kullanılabilir. Bu durumda AdMob, cihaz kimliği ve reklam etkileşimleri gibi anonim veriler toplayabilir.</li>
+      </ul>
+
+      <h2>2. Verilerin Kullanımı</h2>
+      <ul>
+        <li>Veriler yalnızca oyun deneyimini geliştirmek ve reklamların doğru çalışmasını sağlamak için kullanılır.</li>
+        <li>Üçüncü şahıslarla paylaşılmaz, yalnızca hizmet sağlayıcılarla sınırlıdır (ör. Google AdMob).</li>
+      </ul>
+
+      <h2>3. Güvenlik</h2>
+      <ul>
+        <li>Uygulama cihazınızda saklanan verileri korumak için standart güvenlik önlemleri uygular.</li>
+        <li>Hiçbir kişisel veri sunucularımıza aktarılmaz.</li>
+      </ul>
+
+      <h2>4. İzinler</h2>
+      <ul>
+        <li>İnternet erişimi izni kullanılır (reklamlar için).</li>
+        <li>Başka bir izin talep edilmez.</li>
+      </ul>
+
+      <h2>5. İletişim</h2>
+      <p>
+        Sorularınız için geliştirici e‑posta adresi üzerinden iletişime geçebilirsiniz: 
+        <a href="mailto:habiblas@gmail.com">habiblas@gmail.com</a>
+      </p>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #27272a; margin: 2rem 0;">
+
+    <!-- ENGLISH PRIVACY POLICY -->
+    <div class="lang-section">
+      <div class="lang-header en">
+        <span>🇬🇧 ENGLISH - PRIVACY POLICY</span>
+      </div>
+
+      <h2>1. Data Collection</h2>
+      <ul>
+        <li>The app does not collect personal information (such as name, email, phone).</li>
+        <li>Game progress and settings are stored locally on the device.</li>
+        <li>Google AdMob may be used for ads. In this case, AdMob may collect anonymous data such as device ID and ad interactions.</li>
+      </ul>
+
+      <h2>2. Data Usage</h2>
+      <ul>
+        <li>Data is used only to improve gameplay experience and ensure ads function properly.</li>
+        <li>Data is not shared with third parties, except service providers like Google AdMob.</li>
+      </ul>
+
+      <h2>3. Security</h2>
+      <ul>
+        <li>The app applies standard security measures to protect locally stored data.</li>
+        <li>No personal data is transferred to our servers.</li>
+      </ul>
+
+      <h2>4. Permissions</h2>
+      <ul>
+        <li>Internet access permission is required (for ads).</li>
+        <li>No other permissions are requested.</li>
+      </ul>
+
+      <h2>5. Contact</h2>
+      <p>
+        For any questions, please contact the developer via email: 
+        <a href="mailto:habiblas@gmail.com">habiblas@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 Habib Sal - Tüm Hakları Saklıdır / All Rights Reserved. | <a href="/">habibsal.com.tr</a></p>
+    </div>
+  </div>
+</body>
+</html>

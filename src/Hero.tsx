@@ -3,6 +3,7 @@ import { useThemeLanguage } from '../context/ThemeLanguageContext';
 import { habibSalProfile } from '../data/habibSalData';
 import { Bot, ArrowRight, Sparkles, MapPin, Globe, Twitter, Instagram, Linkedin, Award, Layers, Zap } from 'lucide-react';
 import heroImage from '../images/regenerated_image_1785659752698.png';
+import heroImageWebp from '../images/habib_sal_portrait.webp';
 
 export const Hero: React.FC = () => {
   const { language, playUiSound, setAiModalOpen } = useThemeLanguage();
@@ -162,18 +163,23 @@ export const Hero: React.FC = () => {
               
               {/* Card Container */}
               <div className="relative rounded-3xl overflow-hidden bg-neutral-900 border border-neutral-800/90 shadow-2xl">
-                <img
-                  src={heroImage}
-                  alt="Habib Sal Executive Portrait"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    if (!target.src.includes('regenerated_image_1785659752698.png')) {
-                      target.src = '/images/regenerated_image_1785659752698.png';
-                    }
-                  }}
-                  className="w-full h-[480px] sm:h-[520px] object-cover object-center filter contrast-[1.05] brightness-95 group-hover:scale-105 transition-transform duration-700"
-                />
+                <picture className="w-full h-full">
+                  <source srcSet={heroImageWebp} type="image/webp" />
+                  <img
+                    src={heroImage}
+                    alt="Habib Sal Executive Portrait"
+                    referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      if (!target.src.includes('habib_sal_portrait.webp')) {
+                        target.src = '/images/habib_sal_portrait.webp';
+                      } else if (!target.src.includes('regenerated_image_1785659752698.png')) {
+                        target.src = '/images/regenerated_image_1785659752698.png';
+                      }
+                    }}
+                    className="w-full h-[480px] sm:h-[520px] object-cover object-center filter contrast-[1.05] brightness-95 group-hover:scale-105 transition-transform duration-700"
+                  />
+                </picture>
                 
                 {/* Gradient Overlays */}
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent" />

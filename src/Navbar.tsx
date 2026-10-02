@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useThemeLanguage } from '../context/ThemeLanguageContext';
 import { Bot, Sun, Moon, Volume2, VolumeX, Menu, X, ArrowUpRight, Sparkles } from 'lucide-react';
 import brandLogo from '../images/habib_sal_logo.png';
+import brandLogoWebp from '../images/habib_sal_logo.webp';
 
 export const Navbar: React.FC = () => {
   const { language, setLanguage, theme, toggleTheme, soundEnabled, setSoundEnabled, playUiSound, setAiModalOpen } = useThemeLanguage();
@@ -57,18 +58,23 @@ export const Navbar: React.FC = () => {
           >
             <div className="relative w-[88px] h-[70px] sm:w-[103px] sm:h-[83px] rounded-2xl bg-gradient-to-br from-amber-300 via-amber-500 to-amber-600 p-[2.5px] shadow-2xl shadow-amber-500/50 ring-2 ring-amber-400/80 group-hover:scale-105 group-hover:shadow-amber-400/70 transition-all duration-300">
               <div className="w-full h-full bg-neutral-950 rounded-[13px] overflow-hidden flex items-center justify-center">
-                <img
-                  src={brandLogo}
-                  alt="Habib Sal Logo"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    if (!target.src.includes('habib_sal_logo.png')) {
-                      target.src = '/images/habib_sal_logo.png';
-                    }
-                  }}
-                  className="w-full h-full object-cover object-center rounded-[12px] filter brightness-110 contrast-105 transition-transform duration-500 group-hover:scale-105"
-                />
+                <picture className="w-full h-full flex items-center justify-center">
+                  <source srcSet={brandLogoWebp} type="image/webp" />
+                  <img
+                    src={brandLogo}
+                    alt="Habib Sal Logo"
+                    referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      if (!target.src.includes('habib_sal_logo.webp')) {
+                        target.src = '/images/habib_sal_logo.webp';
+                      } else if (!target.src.includes('habib_sal_logo.png')) {
+                        target.src = '/images/habib_sal_logo.png';
+                      }
+                    }}
+                    className="w-full h-full object-cover object-center rounded-[12px] filter brightness-110 contrast-105 transition-transform duration-500 group-hover:scale-105"
+                  />
+                </picture>
               </div>
             </div>
           </button>

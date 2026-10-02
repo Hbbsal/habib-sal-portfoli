@@ -2,6 +2,7 @@ import React from 'react';
 import { useThemeLanguage } from '../context/ThemeLanguageContext';
 import { Twitter, Instagram, Linkedin, Globe, Mail, ArrowUp, ShieldCheck } from 'lucide-react';
 import brandLogo from '../images/habib_sal_logo.png';
+import brandLogoWebp from '../images/habib_sal_logo.webp';
 
 export const Footer: React.FC = () => {
   const { language, playUiSound } = useThemeLanguage();
@@ -21,18 +22,23 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3.5">
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 p-[1.5px] shadow-lg shadow-amber-500/20 overflow-hidden flex items-center justify-center">
-                <img
-                  src={brandLogo}
-                  alt="Habib Sal Logo"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    if (!target.src.includes('habib_sal_logo.png')) {
-                      target.src = '/images/habib_sal_logo.png';
-                    }
-                  }}
-                  className="w-full h-full object-cover object-center rounded-[10px] filter brightness-105"
-                />
+                <picture className="w-full h-full flex items-center justify-center">
+                  <source srcSet={brandLogoWebp} type="image/webp" />
+                  <img
+                    src={brandLogo}
+                    alt="Habib Sal Logo"
+                    referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      if (!target.src.includes('habib_sal_logo.webp')) {
+                        target.src = '/images/habib_sal_logo.webp';
+                      } else if (!target.src.includes('habib_sal_logo.png')) {
+                        target.src = '/images/habib_sal_logo.png';
+                      }
+                    }}
+                    className="w-full h-full object-cover object-center rounded-[10px] filter brightness-105"
+                  />
+                </picture>
               </div>
               <span className="font-serif text-2xl font-bold text-neutral-100 tracking-tight">
                 HABİB SAL<span className="text-amber-500">.</span>

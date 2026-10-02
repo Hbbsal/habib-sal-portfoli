@@ -65,6 +65,7 @@ export interface ProjectItem {
   featured?: boolean;
   playStoreUrl?: string;
   packageName?: string;
+  privacyPolicyUrl?: string;
 }
 
 export interface ArticleItem {

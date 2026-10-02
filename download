@@ -1,8 +1,14 @@
-node_modules/
-build/
-dist/
-coverage/
-.DS_Store
-*.log
-.env*
-!.env.example
+# Auto-detect text files and normalize line endings to LF
+* text=auto eol=lf
+
+# Force image and binary formats to always be treated as binary to prevent encoding corruption
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
